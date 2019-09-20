@@ -101,6 +101,7 @@ export default {
                         viaResourceId: this.viaResourceId,
                         viaRelationship: this.viaRelationship,
                         relationshipType: this.relationshipType,
+                        import: true
                     },
                 })
                 .then(response => {
