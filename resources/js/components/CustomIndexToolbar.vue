@@ -170,6 +170,7 @@ export default {
         actionFormData() {
             return _.tap(new FormData(), formData => {
                 formData.append('resources', this.selectedResources)
+                formData.append('import', true)
 
                 _.each(this.selectedAction.fields, field => {
                     field.fill(formData)
